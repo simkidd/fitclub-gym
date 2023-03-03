@@ -1,0 +1,33 @@
+.footer-container{
+    position: relative;
+
+    >hr{
+        border: 1px solid var(--lightgray)
+    }
+
+    .footer{
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        height: 20rem;
+
+        .social-links{
+            display: flex;
+            gap:4rem;
+
+            >img{
+            width:2rem;
+            height:2rem;
+            cursor: pointer;
+            }
+        }
+
+        .f-logo{
+            >img{
+                width: 10rem;
+            }
+        }
+    }
+}
