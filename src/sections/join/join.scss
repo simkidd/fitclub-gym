@@ -1,0 +1,58 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 5rem;
+    
+    .j-left{
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        flex: 1;
+
+        hr{
+            position: absolute;
+            width: 10rem;
+            border: 2px solid var(--orange);
+            border-radius: 20%;
+            margin-top: -10px;
+        }
+        >div{
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+    }
+
+    .j-right{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        .form-container{
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            padding: 1.5rem 2rem;
+            background: gray;
+            width: 60%;
+
+            input[type='text'],[type='email']{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: var(--lightgray);
+                padding: 0.5rem;
+                &::placeholder{
+                    color: var(--lightgray);
+                }
+            }
+
+            .btn-j{
+                background: var(--orange);
+                color: white;
+            }
+        }
+    }
+}
