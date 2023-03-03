@@ -1,6 +1,18 @@
 .hero {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
+
+    .h-blur{
+        width: 22rem;
+        height: 30rem;
+        left: 0;
+        @media screen and (max-width:768px){
+        width: 14rem;
+        }
+    }
 
     .h-left {
         padding: 2rem;
@@ -22,6 +34,12 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            @media screen and (max-width:768px){
+                margin-top: 2rem;
+                font-size: small;
+                align-self: center;
+                transform: scale(0.9);
+            }
 
             div {
                 position: absolute;
@@ -47,6 +65,11 @@
             color: #fff;
             text-overflow: inherit;
             font-weight: bold;
+            @media screen and (max-width:768px){
+                font-size: xx-large;
+                align-items: center;
+                justify-content: center;
+            }
 
             div:nth-of-type(3) {
                 font-size: 1rem;
@@ -54,6 +77,12 @@
                 text-transform: none;
                 letter-spacing: 1px;
                 width: 80%;
+                @media screen and (max-width:768px){
+                    font-size: small;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
             }
         }
 
@@ -68,11 +97,17 @@
                 span:nth-of-type(1) {
                     color: white;
                     font-size: 2rem;
+                    @media screen and (max-width:768px){
+                        font-size: large;
+                    }
                 }
 
                 span:nth-of-type(2) {
                     color: var(--gray);
                     text-transform: uppercase;
+                    @media screen and (max-width:768px){
+                        font-size: small;
+                    }
                 }
             }
         }
@@ -100,6 +135,10 @@
         flex: 1;
         position: relative;
         background: var(--orange);
+        @media screen and (max-width:768px){
+            position: relative;
+            background: none;
+        }
         
         .btn{
             position: absolute;
@@ -120,6 +159,10 @@
             position: absolute;
             right: 4rem;
             top: 7rem;
+            @media screen and (max-width:768px){
+                left: 1rem;
+                top: 2rem;
+            }
 
             img{
                 width: 2rem;
@@ -139,12 +182,24 @@
             top: 10rem;
             right: 8rem;
             width: 23rem;
+            @media screen and (max-width:768px){
+                position: relative;
+                width: 15rem;
+                left: 7rem;
+                top: 4rem;
+                align-self: center;
+    }
         }
         .heroImageBack{
             position: absolute;
             top: 4rem;
             right: 20rem;
             z-index: -1;
+            @media screen and (max-width:768px){
+                width: 15rem;
+                left: 2rem;
+                top: 0;
+            }
         }
 
         .calories{
@@ -157,9 +212,17 @@
             position: absolute;
             top: 32rem;
             right: 28rem;
+            @media screen and (max-width:768px){
+                position: relative;
+                top: 5rem;
+                left: 2rem;
+            }
 
             img{
                 width: 3rem;
+                @media screen and (max-width:768px){
+                    width: 2rem;
+                }
             }
 
             div{
@@ -173,6 +236,9 @@
                 :nth-child(2){
                     color: white;
                     font-size: 1.5rem;
+                    @media screen and (max-width:768px){
+                        font-size: 1rem;
+                    }
                 }
             }
         }

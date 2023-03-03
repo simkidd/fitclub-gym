@@ -16,10 +16,13 @@ const Footer = () => {
           <img src={Linkedin} alt="" />
         </div>
 
-        <div classNamFe="f-logo">
+        <div className="f-logo">
           <img src={Logo} alt="" />
         </div>
       </div>
+
+      <div className="blur f-blur1"></div>
+      <div className="blur f-blur2"></div>
     </div>
   );
 };

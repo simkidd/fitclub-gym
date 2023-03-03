@@ -2,6 +2,9 @@
     display: flex;
     gap: 1rem;
     padding: 0 2rem;
+    @media screen and (max-width:768px){
+        flex-direction: column;       
+    }
 }
 
 .t-left{
@@ -20,6 +23,9 @@
     >:nth-child(3){
         font-weight: bold;
         font-size: 3rem;
+        @media screen and (max-width:768px){
+            font-size: xx-large;
+        }
     }
     >:nth-child(4){
         text-transform: none;
@@ -31,6 +37,18 @@
 .t-right{
     flex: 1;
     position: relative;
+    @media screen and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+
+        >div{
+            position: relative;
+            display: none;
+        }
+    }
 
     >img{
         position: absolute;
@@ -39,6 +57,12 @@
         object-fit: cover;
         right: 8rem;
         top: 2rem;
+        @media screen and (max-width:768px){
+            top: 0;
+            right: 0;
+            position: relative;
+            align-self: center;
+        }
     }
     >:nth-child(1){
         position: absolute;
@@ -63,6 +87,12 @@
         position: absolute;
         bottom: 1rem;
         left: 3rem;
+        @media screen and (max-width:768px){
+            display: flex;
+            bottom: 0;
+            left: 0;
+            position: relative;
+        }
         img{
             width: 1.5rem;
             cursor: pointer;
