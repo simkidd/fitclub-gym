@@ -25,13 +25,11 @@
             flex-direction: column;
             background: var(--appColor);
             padding: 2rem;
-            margin-top: 5rem;
         }
         
 
         li{
             cursor: pointer;
-            width: 100%;
             &:hover{
                 color: var(--orange);
             }
