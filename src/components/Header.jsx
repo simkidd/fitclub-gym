@@ -17,7 +17,7 @@ const Header = () => {
           onClick={() => setMenu(true)}
           style={{
             background: "var(--appColor)",
-            padding: "0.5rem",
+            padding: "0.5rem 0.6rem",
             borderRadius: "5px",
           }}
         >
